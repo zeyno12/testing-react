@@ -1,0 +1,15 @@
+.logo_image {
+  img {
+    @include imagr_items(40%, null, null, cover, pointer);
+  }
+}
+.main_list {
+  ul {
+    @include flex(space-between, center, null, null);
+    li {
+      a {
+        @include text(none, 16px, 500, $mainblacktext);
+      }
+    }
+  }
+}

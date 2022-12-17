@@ -1,0 +1,24 @@
+@mixin flex($content, $items, $direction, $gap) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  flex-direction: $direction;
+  gap: $gap;
+}
+@mixin text($tex_dec, $f_size, $f_weight, $color) {
+  text-decoration: $tex_dec;
+  font-size: $f_size;
+  font-weight: $f_weight;
+  color: $color;
+  &:hover {
+    color: palevioletred;
+    transition: 0.3s;
+  }
+}
+@mixin imagr_items($widht, $height, $br, $ob_fit, $cursor) {
+  width: $widht;
+  height: $height;
+  border-radius: $br;
+  object-fit: $ob_fit;
+  cursor: $cursor;
+}
