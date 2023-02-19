@@ -10,6 +10,8 @@ import Shop from './components/pages/shoop/Shop';
 import Pagess from './components/pages/pagesss/Pagess';
 import Blog from './components/pages/blog/Blog';
 import Contact from './components/pages/contact/Contact';
+import Rose from './components/pages/rose/Rose';
+import Prettier from './components/pages/prettier/Prettier';
 import Error from "./components/error/Error"
 const App =()=>{
 return(
@@ -22,10 +24,12 @@ return(
         <Route path='/services'  element={<Services/>} />
         <Route path='/shop'  element={<Shop/>} />
         <Route path='/pagess'  element={<Pagess/>} />
-        <Route path='/blog'  element={<Blog/>} />
+        <Route path='/blog'  element={<Blog/>  }/>
         <Route path='/contact'  element={<Contact/>} />
+        <Route path='/rose'  element={<Rose/>} />
+        <Route path='/prettier'  element={<Prettier/>} />
     </Routes>
-    <Footer/>
+    <Footer button="salam zeynus"/>
     </BrowserRouter>
     )
 }

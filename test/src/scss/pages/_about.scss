@@ -1,0 +1,58 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main_wrapper {
+    background-color: plum;
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 8px 23px 30px 3px #a4a4a4;
+    h1 {
+      text-align: center;
+      padding: 10px 0px;
+      color: whitesmoke;
+    }
+    form{
+    display: flex;
+    justify-content: center;
+        .task_input{
+            background-color: #d3d3d3;
+            border: none;
+            outline: none;
+            padding: 7px 20px;
+            border-radius: 8px;
+            margin: 0px 10px;
+        }
+        .button_add{
+            background-color: #d3d3d3;
+            border: none;
+            outline: none;
+            padding: 7px 25px;
+            border-radius: 8px;
+        }
+    }
+    .todo_list{
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    list-style: none;
+    .list{
+      margin: 0px 10px;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    }
+    .task_button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    i{
+    font-size: 20px;
+    color: darkblue;
+    }
+    }
+    }
+  }
+}

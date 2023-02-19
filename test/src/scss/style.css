@@ -62,4 +62,206 @@ table {
 .main_list ul li a:hover {
   color: palevioletred;
   transition: 0.3s;
+}
+
+#slider_main .swiper_items {
+  position: relative;
+}
+#slider_main .swiper_items .swiper {
+  width: 100%;
+  height: 100%;
+}
+#slider_main .swiper_items .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider_main .swiper_items .slider_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#slider_main .swiper_items .ztext {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+#slider_main .swiper_items .animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #7162a7 0%, #a05aec 29%, #b88efc 67%, #a568ff 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .main_wrapper {
+  background-color: plum;
+  width: 400px;
+  height: 400px;
+  border-radius: 16px;
+  box-shadow: 8px 23px 30px 3px #a4a4a4;
+}
+.body .main_wrapper h1 {
+  text-align: center;
+  padding: 10px 0px;
+  color: whitesmoke;
+}
+.body .main_wrapper form {
+  display: flex;
+  justify-content: center;
+}
+.body .main_wrapper form .task_input {
+  background-color: #d3d3d3;
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 8px;
+  margin: 0px 10px;
+}
+.body .main_wrapper form .button_add {
+  background-color: #d3d3d3;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+  border-radius: 8px;
+}
+.body .main_wrapper .todo_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+.body .main_wrapper .todo_list .list {
+  margin: 0px 10px;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+}
+.body .main_wrapper .todo_list .task_button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.body .main_wrapper .todo_list .task_button i {
+  font-size: 20px;
+  color: darkblue;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.counter p,
+.counter button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.appcontainer {
+  margin: auto;
+  padding: auto;
+  height: 400px;
+  width: 300px;
+  background: #9000ff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+.appcontainer .temperaturedisplaycontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.appcontainer .temperaturedisplaycontainer .temperaturedisplay {
+  display: flex;
+  border-radius: 50%;
+  color: #ffffff;
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 3px #ffffff solid;
+  transition: background 0.5s;
+}
+.appcontainer .buttoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.appcontainer .buttoncontainer button {
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 32px;
+  color: #ffffff;
+  background: rgb(136, 136, 136);
+  border: 2px #ffffff solid;
+}
+.appcontainer .buttoncontainer button:hover {
+  background: rgb(13, 13, 13);
+  cursor: pointer;
+}
+
+.neutral {
+  background: rgb(184, 184, 184);
+}
+
+.cold {
+  background: #035aa6;
+}
+
+.hot {
+  background: #ff5200;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.input_search {
+  outline: none;
+  width: 90%;
+  display: flex;
+  height: 40px;
+  margin: 3rem;
+  border-radius: 7px;
+  border: 3px solid #f6cbff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table td, table th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f6cbff;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+h2{
+text-align: center;
+margin-top: 3rem;
+}
+.input_search{
+outline: none;
+width: 90%;
+display: flex;
+height: 40px;
+margin: 3rem;
+border-radius: 7px;
+border: 3px solid #f6cbff;
+}
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        td, th {
+          border: 1px solid #000000;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #f6cbff;
+        }
+      }
+      

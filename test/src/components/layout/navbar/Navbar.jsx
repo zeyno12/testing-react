@@ -8,14 +8,7 @@ const Navbar = () => {
         <nav>
           <div className="container">
             <div className="row mt-3 align-items-center">
-              <div className="col-lg-4">
-                <div className="logo_image">
-                  <NavLink to="/">
-                  <img src={Logo} alt="makeup logo" />
-                  </NavLink>
-                </div>
-              </div>
-              <div className="col-lg-8">
+              <div className="col-lg-12">
              <div className="main_list">
              <ul>
                   <li>
@@ -51,6 +44,16 @@ const Navbar = () => {
                   <li>
                     <NavLink to="/contact">
                       <p>Contact</p>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/rose">
+                      <p>Rose</p>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/prettier">
+                      <p>Prettier</p>
                     </NavLink>
                   </li>
                 </ul>
